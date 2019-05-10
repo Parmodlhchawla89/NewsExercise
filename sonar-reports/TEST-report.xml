@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='NewYorkTopStoriesUITests.xctest' tests='4' failures='0'>
+  <testsuite name='NewYorkTopStoriesTests.NewYorkTopStoriesTests' tests='3' failures='0'>
+    <testcase classname='NewYorkTopStoriesTests.NewYorkTopStoriesTests' name='testExample' time='0.003'/>
+    <testcase classname='NewYorkTopStoriesTests.NewYorkTopStoriesTests' name='testPerformanceExample' time='0.547'/>
+    <testcase classname='NewYorkTopStoriesTests.NewYorkTopStoriesTests' name='testTopStoriesArticle' time='0.003'/>
+  </testsuite>
+  <testsuite name='NewYorkTopStoriesUITests.NewYorkTopStoriesUITests' tests='1' failures='0'>
+    <testcase classname='NewYorkTopStoriesUITests.NewYorkTopStoriesUITests' name='testExample' time='16.281'/>
+  </testsuite>
+</testsuites>

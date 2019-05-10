@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="110" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModule="NewYorkTopStories" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="110.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breakingNews.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="aRV-ph-qly" customClass="AsyncImageView" customModule="NewYorkTopStories" customModuleProvider="target">
+                        <rect key="frame" x="6" y="17" width="80" height="76.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="51t-Aq-bXc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUR-ag-ANK">
+                        <rect key="frame" x="94" y="17" width="223" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="53" id="yF1-As-MuZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4k-wd-ibc">
+                        <rect key="frame" x="94" y="75" width="223" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i4k-wd-ibc" firstAttribute="top" secondItem="cUR-ag-ANK" secondAttribute="bottom" constant="5" id="0Xm-Ab-hjg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cUR-ag-ANK" secondAttribute="trailing" constant="-9" id="Axf-WH-EbP"/>
+                    <constraint firstItem="i4k-wd-ibc" firstAttribute="leading" secondItem="cUR-ag-ANK" secondAttribute="leading" id="Mfx-Lx-A98"/>
+                    <constraint firstItem="aRV-ph-qly" firstAttribute="top" secondItem="cUR-ag-ANK" secondAttribute="top" id="S9k-5y-Ohj"/>
+                    <constraint firstItem="aRV-ph-qly" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="a1U-7J-lV7"/>
+                    <constraint firstItem="cUR-ag-ANK" firstAttribute="leading" secondItem="aRV-ph-qly" secondAttribute="trailing" constant="8" symbolic="YES" id="cKb-DA-1XE"/>
+                    <constraint firstItem="i4k-wd-ibc" firstAttribute="trailing" secondItem="cUR-ag-ANK" secondAttribute="trailing" id="dCr-0j-WwQ"/>
+                    <constraint firstItem="i4k-wd-ibc" firstAttribute="bottom" secondItem="aRV-ph-qly" secondAttribute="bottom" id="nXw-Zj-mWR"/>
+                    <constraint firstItem="aRV-ph-qly" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="p87-tW-5pz"/>
+                    <constraint firstItem="aRV-ph-qly" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-10" id="rOs-73-GYG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="articleThumbnail" destination="aRV-ph-qly" id="OO1-r4-6st"/>
+                <outlet property="publishDate" destination="i4k-wd-ibc" id="ohG-sD-PQG"/>
+                <outlet property="title" destination="cUR-ag-ANK" id="snu-3y-6Js"/>
+            </connections>
+            <point key="canvasLocation" x="140.80000000000001" y="168.6656671664168"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="breakingNews.jpeg" width="1280" height="720"/>
+    </resources>
+</document>

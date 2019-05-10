@@ -11,6 +11,10 @@ import XCTest
 
 class NewYorkTopStoriesTests: XCTestCase {
 
+    let topStoriesJSON = ["abstract": "Unit Test Abstract",
+                          "title": "Unit Test Title",
+                          "published_date": "2017-01-28"]
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -29,6 +33,13 @@ class NewYorkTopStoriesTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testTopStoriesArticle() {
+       let topstories = TopStories(json: topStoriesJSON)
+       XCTAssertEqual(topstories.title, "Unit Test Title")
+       XCTAssertEqual(topstories.abstract, "Unit Test Abstract")
+       XCTAssertEqual(topstories.publishDate, "2017-01-28")
     }
 
 }
