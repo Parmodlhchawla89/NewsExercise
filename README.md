@@ -1,4 +1,4 @@
-# NewsExercise
+# NewYorkTopStories
 
 Project Structure:
 - **Delegate**: Contains app delegate file
