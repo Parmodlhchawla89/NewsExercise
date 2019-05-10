@@ -10,9 +10,9 @@ Project Structure:
 **Utilities**: Contains utility classes like Asyncimage downloading
 - **Storyboard**: Contains all storyboards, each screen will have its corresponding storyboard.
 - **Resource**: Images
-Swift version - Swift 4.2
-Design Pattern- MVVM
-Xcode 10.2
+- Swift version - Swift 4.2
+- Design Pattern- MVVM
+- Xcode 10.2
 
 
 Sample APIKEY used for calling NYT api: "XzFdP3brCQGBB9a2AD2Ur1puE8Obel6t"
