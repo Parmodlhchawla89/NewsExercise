@@ -26,8 +26,25 @@ Sample APIKEY used for calling NYT api: "XzFdP3brCQGBB9a2AD2Ur1puE8Obel6t"
 ##SonarQube: I have configured the project to generate a SonarQube report of code quality, warning and vulnerability.
 I have configured "sonar-project.properties" file as per the project.
 
-##Automatic build shell script has been added in the project structure "run-sonar-swift.sh" . This scripts does the following job:
+##Automatic build shell script has been added in the project structure "buildScript.sh" . This scripts does the following job:
 
+Prerequisite to run the build script:
+
+- JDK 1.8
+- SonarQube
+- SonarScanner
+
+Once the above tools are installed, Start the SoarQube server with following command:
+
+sh /Applications/SonarQube/bin/macosx-universal-64/sonar.sh console
+
+- Navigate to local host: http://localhost:9000/about
+- use username and password as 'admin'
+- Navigate to project directory
+- Run ./run-buildScript.sh -v command from terminal
+
+
+The shell script will perfomr following task:
 - build the project from the command-line
 - run static code analysis such as linting
 - run unit tests and code coverage
