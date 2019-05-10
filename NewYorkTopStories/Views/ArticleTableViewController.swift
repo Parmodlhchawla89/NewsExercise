@@ -10,11 +10,15 @@ import UIKit
 
 class ArticleTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var articleViewModel : [ArticleViewModel]?
-    
+    var activityView = UIActivityIndicatorView()
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityView = UIActivityIndicatorView(style: .gray)
+        activityView.center = self.view.center
+        activityView.startAnimating()
+        self.view.addSubview(activityView)
         self.tableView.register(UINib(nibName: "ArticleTableViewCell", bundle: nil), forCellReuseIdentifier: "ArticleTableViewCell")
         self.fetchArticles()
         // Do any additional setup after loading the view, typically from a nib.ret
@@ -29,6 +33,7 @@ class ArticleTableViewController: UIViewController,UITableViewDelegate,UITableVi
             self.articleViewModel = articles
             
             DispatchQueue.main.async { [weak self] in
+                self?.activityView.stopAnimating()
                 self?.tableView.reloadData()
             }
         }
@@ -49,6 +54,7 @@ class ArticleTableViewController: UIViewController,UITableViewDelegate,UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:ArticleTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "ArticleTableViewCell") as! ArticleTableViewCell
+        cell.selectionStyle = .none
         cell.configureTableViewCell(viewModel: articleViewModel![indexPath.row])
         return cell
     }

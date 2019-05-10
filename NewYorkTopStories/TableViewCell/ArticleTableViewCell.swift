@@ -26,7 +26,7 @@ class ArticleTableViewCell: UITableViewCell {
     }
     
     func configureTableViewCell(viewModel:ArticleViewModel){
-        self.publishDate.text = ("Published on:\(viewModel.publishedDateString)")
+        self.publishDate.text = ("Published on: \(viewModel.publishedDateString)")
         self.title.text = viewModel.titleText
         self.articleThumbnail.loadImage(urlString: viewModel.thumbnailImageUrl.absoluteString)
     }
