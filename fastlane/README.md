@@ -25,9 +25,9 @@ fastlane lint
 fastlane tests
 ```
 
-### sonar
+### metrics
 ```
-fastlane sonar
+fastlane metrics
 ```
 
 ### screenshot

@@ -41,7 +41,7 @@ lane :tests do
   run_tests(scheme: "NewYorkTopStoriesTests")
 end
 
-lane :sonar do
+lane :metrics do
 sonar(
   project_key: "com.exercise.NYTDemo",
   project_version: "1.0",
@@ -70,12 +70,11 @@ desc "Upload to App Store"
     deliver
   end
 
-   desc “Create app, take screenshots, build and upload to App Store"
-  lane :run_lanes do
+   lane :run_lanes do
     lint
     tests
-    sonar
     screenshot
+    metrics
     build
     upload
   end
