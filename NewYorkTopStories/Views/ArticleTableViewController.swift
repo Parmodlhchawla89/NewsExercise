@@ -31,7 +31,7 @@ class ArticleTableViewController: UIViewController,UITableViewDelegate,UITableVi
                 return ArticleViewModel(topStories :article)
             }
             self.articleViewModel = articles
-            
+    
             DispatchQueue.main.async { [weak self] in
                 self?.activityView.stopAnimating()
                 self?.tableView.reloadData()

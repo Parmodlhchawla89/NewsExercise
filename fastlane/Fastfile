@@ -25,6 +25,22 @@ platform :ios do
   end
 end
 
+lane:lint do
+swiftlint(
+  mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
+  output_file: "swiftlint.result.json", # The path of the output file (optional)
+  files: [# List of files to process (optional)
+    "./NewYorkTopStories/Delegate/AppDelegate.swift",
+    "./NewYorkTopStories/Model/Articles.swift"
+  ],
+  ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
+)
+end
+
+lane :tests do
+  run_tests(scheme: "NewYorkTopStoriesTests")
+end
+
 desc "Take screenshots"
   lane :screenshot do
     snapshot
@@ -45,10 +61,12 @@ desc "Upload to App Store"
     deliver
   end
 
- desc "Provision, take screenshots, build and upload to App Store"
-  lane :build_upload do
-    provision
+   desc “Create app, take screenshots, build and upload to App Store"
+  lane :run_lanes do
+    lint
+    tests
     screenshot
     build
     upload
   end
+

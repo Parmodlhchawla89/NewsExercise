@@ -20,6 +20,34 @@
                ReferencedContainer = "container:NewYorkTopStories.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6A03D3D822847C5700FE0B9F"
+               BuildableName = "NewYorkTopStoriesTests.xctest"
+               BlueprintName = "NewYorkTopStoriesTests"
+               ReferencedContainer = "container:NewYorkTopStories.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6A03D3E322847C5700FE0B9F"
+               BuildableName = "NewYorkTopStoriesUITests.xctest"
+               BlueprintName = "NewYorkTopStoriesUITests"
+               ReferencedContainer = "container:NewYorkTopStories.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

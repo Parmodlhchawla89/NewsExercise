@@ -23,7 +23,13 @@ Sample APIKEY used for calling NYT api: "XzFdP3brCQGBB9a2AD2Ur1puE8Obel6t"
 
 ##UI automation test: Apart from the unit test cases, I have created a UI automation test case. This test case automatically opens up the app and taps on the various tableview cell, navigate to details page and come back to the home page.
 
-##Automatic build script: - Automatic app build and Appstore connect release has been enabled with the help of 'FastLane'
+##Automatic build script: - Automatic build scrript performs following tasks with the help of 'FastLane'
+ 
+ - run static code analysis with SwiftLint
+ - run unit tests and code coverage
+ - Take app screeshots for app store
+ - Version incrementing
+ - Upload app to appstore
  
  In the project structure, Fastlane folder is added which contains 'NewYorkTopStories' app configurations and screenshots. 
 
@@ -34,10 +40,10 @@ Prerequisite to upload the app to Appstore:
 - Apple Provioising profile
 
 Once the above are setup navigate to the project directory and run the following command:
--$ fastlane build_upload
 
-- The above command will perform app provisioning, building, taking screenshot and uploading task
+-$ bundle exec fastlane run_lanes
 
+- The above command will perform code analysis, unit testing ,app provisioning, building, taking screenshot and uploading task
 
 ##SonarQube: I have configured the project to generate a SonarQube report of code quality, warning and vulnerability.
 
@@ -60,14 +66,4 @@ sh /Applications/SonarQube/bin/macosx-universal-64/sonar.sh console
 - Navigate to project directory
 - Run ./run-buildScript.sh -v command from terminal
 
-
-The shell script will perform following task:
-- build the project from the command-line
-- run static code analysis such as linting
-- run unit tests and code coverage
-
 The SonarQube code coverage reports has been added in the project struture under "sonar-report" folder
-
-
-
-
