@@ -44,3 +44,11 @@ desc "Upload to App Store"
   lane :upload do
     deliver
   end
+
+ desc "Provision, take screenshots, build and upload to App Store"
+  lane :build_upload do
+    provision
+    screenshot
+    build
+    upload
+  end
