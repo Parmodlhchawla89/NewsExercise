@@ -21,6 +21,7 @@
 		6A03D4062284A96A00FE0B9F /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03D4052284A96A00FE0B9F /* ArticleViewModel.swift */; };
 		6A03D4092284B9E100FE0B9F /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03D4082284B9E100FE0B9F /* AsyncImageView.swift */; };
 		6A03D40F2284C0CE00FE0B9F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03D40E2284C0CE00FE0B9F /* DetailViewController.swift */; };
+		6AE8297A2286E6820064B9B7 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE829792286E6820064B9B7 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		6A03D4052284A96A00FE0B9F /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		6A03D4082284B9E100FE0B9F /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		6A03D40E2284C0CE00FE0B9F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6AE829792286E6820064B9B7 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		6A03D3E722847C5700FE0B9F /* NewYorkTopStoriesUITests */ = {
 			isa = PBXGroup;
 			children = (
+				6AE829792286E6820064B9B7 /* SnapshotHelper.swift */,
 				6A03D3E822847C5700FE0B9F /* NewYorkTopStoriesUITests.swift */,
 				6A03D3EA22847C5700FE0B9F /* Info.plist */,
 			);
@@ -270,13 +273,16 @@
 				TargetAttributes = {
 					6A03D3C422847C5400FE0B9F = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 					};
 					6A03D3D822847C5700FE0B9F = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 6A03D3C422847C5400FE0B9F;
 					};
 					6A03D3E322847C5700FE0B9F = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 6A03D3C422847C5400FE0B9F;
 					};
 				};
@@ -358,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A03D3E922847C5700FE0B9F /* NewYorkTopStoriesUITests.swift in Sources */,
+				6AE8297A2286E6820064B9B7 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +524,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = YUADUPCB5B;
 				INFOPLIST_FILE = NewYorkTopStories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,6 +536,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -536,7 +545,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = YUADUPCB5B;
 				INFOPLIST_FILE = NewYorkTopStories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -547,6 +557,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -556,7 +567,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DQRXT26FC2;
+				DEVELOPMENT_TEAM = YUADUPCB5B;
 				INFOPLIST_FILE = NewYorkTopStoriesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -577,7 +588,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DQRXT26FC2;
+				DEVELOPMENT_TEAM = YUADUPCB5B;
 				INFOPLIST_FILE = NewYorkTopStoriesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -597,7 +608,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DQRXT26FC2;
+				DEVELOPMENT_TEAM = YUADUPCB5B;
 				INFOPLIST_FILE = NewYorkTopStoriesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -617,7 +628,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DQRXT26FC2;
+				DEVELOPMENT_TEAM = YUADUPCB5B;
 				INFOPLIST_FILE = NewYorkTopStoriesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

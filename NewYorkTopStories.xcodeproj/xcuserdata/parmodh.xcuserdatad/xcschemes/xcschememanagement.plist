@@ -7,7 +7,35 @@
 		<key>NewYorkTopStories.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>NewYorkTopStoriesTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>NewYorkTopStoriesUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6A03D3C422847C5400FE0B9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6A03D3D822847C5700FE0B9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6A03D3E322847C5700FE0B9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

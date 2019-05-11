@@ -1,1 +1,1 @@
-
+NYTDemo is a simple app to fetch most viewed data from NYT api
