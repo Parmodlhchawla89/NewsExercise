@@ -41,6 +41,15 @@ lane :tests do
   run_tests(scheme: "NewYorkTopStoriesTests")
 end
 
+lane :sonar do
+sonar(
+  project_key: "com.exercise.NYTDemo",
+  project_version: "1.0",
+  project_name: "NewYorkTopStories",
+  sources_path: File.expand_path("../NewYorkTopStories")
+)
+end
+
 desc "Take screenshots"
   lane :screenshot do
     snapshot
@@ -65,6 +74,7 @@ desc "Upload to App Store"
   lane :run_lanes do
     lint
     tests
+    sonar
     screenshot
     build
     upload

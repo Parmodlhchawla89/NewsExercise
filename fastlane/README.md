@@ -15,6 +15,21 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
+### lint
+```
+fastlane lint
+```
+
+### tests
+```
+fastlane tests
+```
+
+### sonar
+```
+fastlane sonar
+```
+
 ### screenshot
 ```
 fastlane screenshot
@@ -30,9 +45,9 @@ Create ipa
 fastlane upload
 ```
 Upload to App Store
-### do_everything
+### run_lanes
 ```
-fastlane do_everything
+fastlane run_lanes
 ```
 Create app, take screenshots, build and upload to App Store
 

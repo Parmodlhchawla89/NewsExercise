@@ -27,6 +27,7 @@ Sample APIKEY used for calling NYT api: "XzFdP3brCQGBB9a2AD2Ur1puE8Obel6t"
  
  - run static code analysis with SwiftLint
  - run unit tests and code coverage
+ - SonarQube
  - Take app screeshots for app store
  - Version incrementing
  - Upload app to appstore
@@ -43,7 +44,7 @@ Once the above are setup navigate to the project directory and run the following
 
 -$ bundle exec fastlane run_lanes
 
-- The above command will perform code analysis, unit testing ,app provisioning, building, taking screenshot and uploading task
+- The above command will perform code analysis, unit testing ,SonarQube, app provisioning, building, taking screenshot and uploading task
 
 ##SonarQube: I have configured the project to generate a SonarQube report of code quality, warning and vulnerability.
 
