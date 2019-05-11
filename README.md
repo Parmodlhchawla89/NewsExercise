@@ -34,7 +34,9 @@ Prerequisite to upload the app to Appstore:
 - Apple Provioising profile
 
 Once the above are setup navigate to the project directory and run the following command:
-$ fastlane build_upload // This will perfomr provisioning, building, taking screenshot and uploading task
+-$ fastlane build_upload
+
+- The above command will perform app provisioning, building, taking screenshot and uploading task
 
 
 ##SonarQube: I have configured the project to generate a SonarQube report of code quality, warning and vulnerability.
